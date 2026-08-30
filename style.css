@@ -9,9 +9,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    padding: 40px 0;
+}
+
+/* Website Name */
+.site-name {
+    color: #6b1830;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+    text-align: center;
 }
 
 h1 {
@@ -120,7 +132,6 @@ input::placeholder {
     box-shadow:
         0 20px 45px rgba(75, 16, 32, 0.14),
         0 5px 15px rgba(0, 0, 0, 0.08);
-
     position: relative;
     overflow: hidden;
     width: 768px;
@@ -272,7 +283,13 @@ input::placeholder {
 @media (max-width: 650px) {
 
     body {
-        padding: 20px 0;
+        padding: 25px 0;
+    }
+
+    .site-name {
+        font-size: 18px;
+        letter-spacing: 3px;
+        margin-bottom: 18px;
     }
 
     .container {
