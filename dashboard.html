@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EDGE TRADER | Dashboard</title>
+
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="topbar">
+            <div class="brand">EDGE TRADER</div>
+
+            <button id="logoutButton" class="logout-btn">
+                Logout
+            </button>
+        </header>
+
+
+        <main class="content">
+
+            <section class="welcome-card">
+
+                <div>
+                    <span class="eyebrow">WELCOME BACK</span>
+
+                    <h1>
+                        Hello, <span id="userName">Trader</span>
+                    </h1>
+
+                    <p>
+                        Your account is successfully connected.
+                    </p>
+                </div>
+
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Account Active
+                </div>
+
+            </section>
+
+
+            <section class="info-grid">
+
+                <div class="info-card">
+                    <span>Email</span>
+                    <strong id="userEmail">Loading...</strong>
+                </div>
+
+                <div class="info-card">
+                    <span>Account ID</span>
+                    <strong id="userId">Loading...</strong>
+                </div>
+
+                <div class="info-card">
+                    <span>Authentication</span>
+                    <strong id="authProvider">Loading...</strong>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loader"></div>
+        <span>Checking session...</span>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./dashboard.js"></script>
+
+</body>
+
+</html>
